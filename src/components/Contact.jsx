@@ -79,6 +79,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm(
         "service_q3alwn9",
@@ -86,6 +87,7 @@ const Contact = () => {
         ref.current,
         "EpTajGY-J62tQcGmk"
       )
+
       .then(
         (result) => {
           console.log(result.text);
@@ -97,7 +99,6 @@ const Contact = () => {
         }
       );
   };
-
   return (
     <Section>
       <Container>
