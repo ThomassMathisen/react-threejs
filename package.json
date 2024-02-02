@@ -5,11 +5,11 @@
   "type": "module",
   "homepage": "https://thomassmathisen.github.io/react-threejs/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
